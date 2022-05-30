@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Free Games</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="gamename">GameName</string>
+    <string name="sort_by_name">sort by name</string>
+    <string name="sort_by_name2">sort_by_name2</string>
+</resources>
