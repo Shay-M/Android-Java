@@ -1,0 +1,83 @@
+<resources>
+    <string name="forgot_password">Forgot Password</string>
+
+    <string name="app_name">Shift-Manager</string>
+    <string name="title_shifts">Shifts</string>
+    <string name="title_dashboard">personal details</string>
+    <string name="title_paycheck">Paycheck</string>
+
+
+    <string name="small_title_shifts">Choose shifts you are interested in this week</string>
+    <string name="small_title_shifts_manager">Your weekly shifts</string>
+
+    <string name="chip_morning">morning</string>
+    <string name="chip_noon">noon</string>
+    <string name="chip_night">night</string>
+
+    <string name="chip_Sunday">Sunday</string>
+    <string name="chip_Monday">Monday</string>
+    <string name="chip_Tuesday">Tuesday</string>
+    <string name="chip_Wednesday">Wednesday</string>
+    <string name="chip_Thursday">Thursday</string>
+    <string name="chip_Friday">Friday</string>
+    <string name="chip_Saturday">Saturday</string>
+
+    <!--    <string name="chip_Sunday">Sun</string>-->
+    <!--    <string name="chip_Monday">Mon</string>-->
+    <!--    <string name="chip_Tuesday">Tue</string>-->
+    <!--    <string name="chip_Wednesday">Wed</string>-->
+    <!--    <string name="chip_Thursday">Thu</string>-->
+    <!--    <string name="chip_Friday">Fri</string>-->
+    <!--    <string name="chip_Saturday">Sat</string>-->
+
+    <string name="button_save">save</string>
+    <string name="button_sand_to_manager">sand to manager</string>
+
+    <string name="enter_username">Enter Email address</string>
+    <string name="enter_password">Enter password</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="login">LOGIN</string>
+    <string name="title_activity_main_manu">MainManu</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_logout">Logout</string>
+
+    <string name="menu_home">Request shifts</string>
+    <string name="menu_gallery">My shifts</string>
+    <string name="menu_slideshow">Adding an employee</string>
+
+    <string name="employee_s_name">Employee\'s name</string>
+    <string name="employee_s_email">Employee\'s Email</string>
+    <string name="employee_s_salary">Employee\'s salary</string>
+    <string name="employee_s_password">Employee\'s password</string>
+    <string name="add_new_employee">Add new employee</string>
+    <string name="is_manager">Is Manager</string>
+    <string name="manager_shifts">Manager Shifts</string>
+    <string name="synchronize_with_calendar">Synchronize with calendar</string>
+    <string name="spinner_title" />
+    <string name="sand_to_employee">sand to employee</string>
+    <string name="shift_manager">ShiftManager</string>
+    <string name="calculate_salary">My Salary</string>
+    <string name="these_are_the_weekly_shifts_the_manager_sent_you">These are the weekly shifts the manager sent you</string>
+    <string name="manager_helper">Select an employee from the menu above, and set which shifts he will work, what is marked in green are those shifts that the employee is interested in.</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+</resources>

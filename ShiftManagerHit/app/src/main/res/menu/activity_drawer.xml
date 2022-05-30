@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_employee_selects_shifts"
+            android:icon="@drawable/ic_schedule"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_my_shifts"
+            android:icon="@drawable/money"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_manager"
+            android:icon="@drawable/_8_shift"
+            android:title="@string/manager_shifts" />
+        <item
+            android:id="@+id/nav_add_employee"
+            android:icon="@drawable/employee_id"
+            android:title="@string/menu_slideshow" />
+
+    </group>
+</menu>

@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c5"
+    tools:context=".ui.EmployeeShiftsHave.EmployeeShiftsHaveFragment">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32999998">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:layerType="hardware"
+            app:chipSpacingHorizontal="2dp"
+            app:chipSpacingVertical="10dp"
+            app:singleLine="false">
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_sunday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="false"
+                android:clickable="false"
+                android:tag="A"
+                android:text="@string/chip_Sunday"
+                android:textColor="#FFFFFF"
+
+                android:textStyle="bold"
+                app:chipBackgroundColor="@android:color/holo_red_dark"
+                app:chipStrokeColor="#000000"
+                app:chipStrokeWidth="2dp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/d1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="false"
+                android:tag="1"
+                android:text="@string/chip_morning"
+                app:chipIcon="@android:drawable/presence_invisible"
+                app:chipIconTint="#FFEB3B" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/d2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="false"
+                android:tag="2"
+                android:text="@string/chip_noon"
+                app:chipIcon="@android:drawable/presence_invisible"
+                app:chipIconTint="#FF9800" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/d3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="false"
+                android:tag="3"
+                android:text="@string/chip_night"
+                app:chipIcon="@android:drawable/presence_invisible"
+                app:chipIconTint="#673AB7" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_monday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:text="@string/chip_Monday"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                app:chipBackgroundColor="@android:color/holo_red_dark"
+                app:chipStrokeColor="#000000"
+                app:chipStrokeWidth="2dp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/d4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="false"
+                android:tag="4"
+                android:text="@string/chip_morning"
+                app:chipIcon="@android:drawable/presence_invisible"
+                app:chipIconTint="#FFEB3B" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/d5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="false"
+                android:tag="5"
+                android:text="@string/chip_noon"
+                app:chipIcon="@android:drawable/presence_invisible"
+                app:chipIconTint="#FF9800" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/d6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="false"
+                android:tag="6"
+                android:text="@string/chip_night"
+                app:chipIcon="@android:drawable/presence_invisible"
+                app:chipIconTint="#673AB7" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_tuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="false"
+                android:clickable="false"
+                android:text="@string/chip_Tuesday"
+                android:textColor="#FFFFFF"
+
+                android:textStyle="bold"
+                app:chipBackgroundColor="@android:color/holo_red_dark"
+                app:chipStrokeColor="#000000"
+                app:chipStrokeWidth="2dp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/d7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="false"
+                android:tag="7"
+                android:text="@string/chip_morning"
+                app:chipIcon="@android:drawable/presence_invisible"
+                app:chipIconTint="#FFEB3B" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/d8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="false"
+                android:tag="8"
+                android:text="@string/chip_noon"
+                app:chipIcon="@android:drawable/presence_invisible"
+                app:chipIconTint="#FF9800" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/d9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="false"
+                android:tag="9"
+                android:text="@string/chip_night"
+                app:chipIcon="@android:drawable/presence_invisible"
+                app:chipIconTint="#673AB7" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_wednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:text="@string/chip_Wednesday"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                app:chipBackgroundColor="@android:color/holo_red_dark"
+                app:chipStrokeColor="#000000"
+                app:chipStrokeWidth="2dp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/d10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="false"
+                android:tag="10"
+                android:text="@string/chip_morning"
+                app:chipIcon="@android:drawable/presence_invisible"
+                app:chipIconTint="#FFEB3B" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/d11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="false"
+                android:tag="11"
+                android:text="@string/chip_noon"
+                app:chipIcon="@android:drawable/presence_invisible"
+                app:chipIconTint="#FF9800" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/d12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="false"
+                android:tag="12"
+                android:text="@string/chip_night"
+                app:chipIcon="@android:drawable/presence_invisible"
+                app:chipIconTint="#673AB7" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_thursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="false"
+                android:clickable="false"
+                android:text="@string/chip_Thursday"
+                android:textColor="#FFFFFF"
+
+                android:textStyle="bold"
+                app:chipBackgroundColor="@android:color/holo_red_dark"
+                app:chipStrokeColor="#000000"
+                app:chipStrokeWidth="2dp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/d13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="false"
+                android:tag="13"
+                android:text="@string/chip_morning"
+                app:chipIcon="@android:drawable/presence_invisible"
+                app:chipIconTint="#FFEB3B" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/d14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="false"
+                android:tag="14"
+                android:text="@string/chip_noon"
+                app:chipIcon="@android:drawable/presence_invisible"
+                app:chipIconTint="#FF9800" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/d15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="false"
+                android:tag="15"
+                android:text="@string/chip_night"
+                app:chipIcon="@android:drawable/presence_invisible"
+                app:chipIconTint="#673AB7" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_friday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:text="@string/chip_Friday"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                app:chipBackgroundColor="@android:color/holo_red_dark"
+                app:chipStrokeColor="#000000"
+                app:chipStrokeWidth="2dp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/d16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="false"
+                android:tag="16"
+                android:text="@string/chip_morning"
+                app:chipIcon="@android:drawable/presence_invisible"
+                app:chipIconTint="#FFEB3B" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/d17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="false"
+                android:tag="17"
+                android:text="@string/chip_noon"
+                app:chipIcon="@android:drawable/presence_invisible"
+                app:chipIconTint="#FF9800" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/d18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="false"
+                android:tag="18"
+                android:text="@string/chip_night"
+                app:chipIcon="@android:drawable/presence_invisible"
+                app:chipIconTint="#673AB7" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_saturday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:text="@string/chip_Saturday"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                app:chipBackgroundColor="@android:color/holo_red_dark"
+                app:chipStrokeColor="#000000"
+                app:chipStrokeWidth="2dp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/d19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="false"
+                android:tag="19"
+                android:text="@string/chip_morning"
+                app:chipIcon="@android:drawable/presence_invisible"
+                app:chipIconTint="#FFEB3B" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/d20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="false"
+                android:tag="20"
+                android:text="@string/chip_noon"
+                app:chipIcon="@android:drawable/presence_invisible"
+                app:chipIconTint="#FF9800" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/d21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="false"
+                android:tag="21"
+                android:text="@string/chip_night"
+                app:chipIcon="@android:drawable/presence_invisible"
+                app:chipIconTint="#673AB7" />
+
+
+        </com.google.android.material.chip.ChipGroup>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/synchronize_with_calendar"
+        android:layout_width="143dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="48dp"
+        android:backgroundTint="@color/select_chip"
+        android:text="@string/synchronize_with_calendar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <Button
+        android:id="@+id/calculate_salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/calculate_salary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="@string/these_are_the_weekly_shifts_the_manager_sent_you"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

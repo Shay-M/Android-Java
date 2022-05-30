@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="5dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/c">
+
+        <ImageView
+            android:id="@+id/recipe_item_img"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/teal_200"
+            android:src="@null" />
+
+        <ImageView
+            android:id="@+id/recipe_item_rating_img"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignBottom="@+id/recipe_item_img"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_baseline_favorite_48" />
+
+        <TextView
+            android:id="@+id/recipe_item_rating_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/recipe_item_rating_img"
+            android:layout_alignTop="@+id/recipe_item_rating_img"
+            android:layout_alignEnd="@+id/recipe_item_rating_img"
+            android:layout_alignBottom="@+id/recipe_item_rating_img"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/recipety"
+            android:text="00"
+            android:textAlignment="center"
+
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/comment_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recipe_item_img"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/recipety"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text="Recipe Title"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
+
+    <!--    android:fontFamily="@font/recipety"-->

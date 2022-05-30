@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "708949053138",
+    "firebase_url": "https://login-firebase-437b3-default-rtdb.firebaseio.com",
+    "project_id": "login-firebase-437b3",
+    "storage_bucket": "login-firebase-437b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:708949053138:android:4667f055bf151c5bffe70b",
+        "android_client_info": {
+          "package_name": "com.example.firebaselogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "708949053138-n22ntdpb2rqlj00c3s0p3sr5pgssrsu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCVYZlOPmunOuiUT2qyvGlRGxdXA9-chI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "708949053138-n22ntdpb2rqlj00c3s0p3sr5pgssrsu0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:708949053138:android:d958face69923e93ffe70b",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "708949053138-n22ntdpb2rqlj00c3s0p3sr5pgssrsu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCVYZlOPmunOuiUT2qyvGlRGxdXA9-chI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "708949053138-n22ntdpb2rqlj00c3s0p3sr5pgssrsu0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:708949053138:android:823a421c381a0ed6ffe70b",
+        "android_client_info": {
+          "package_name": "net.smallacademy.cameraandgallery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "708949053138-n22ntdpb2rqlj00c3s0p3sr5pgssrsu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCVYZlOPmunOuiUT2qyvGlRGxdXA9-chI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "708949053138-n22ntdpb2rqlj00c3s0p3sr5pgssrsu0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

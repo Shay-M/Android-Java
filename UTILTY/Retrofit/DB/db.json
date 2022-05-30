@@ -1,0 +1,22 @@
+{
+  "array": [
+    {
+      "name": "dog",
+      "id": 1,
+      "age": 5,
+      "url": "https://my-json-server.typicode.com/Shay-M/RootShayMu/db"
+    },
+    {
+      "name": "cat",
+      "id": 2,
+      "age": 3,
+      "url": "https://my-json-server.typicode.com/Shay-M/RootShayMu/db"
+    },
+    {
+      "name": "mouse",
+      "id": 3,
+      "age": 1,
+      "url": "https://my-json-server.typicode.com/Shay-M/RootShayMu/db"
+    }
+  ]
+}

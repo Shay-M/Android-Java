@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@color/black"
+    android:padding="4dp">
+
+    <ImageView
+        android:id="@+id/song_image"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        android:layout_weight="1"
+        android:background="@color/_dark_blue"
+        android:padding="3dp"
+        android:src="@drawable/musicxxhdpi"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/notification_title"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="18sp"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="bottom|start"
+                android:maxLength="30"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/notification_title_text"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp">
+
+
+            <ImageButton
+                android:id="@+id/prev_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:contentDescription="@string/previous"
+                android:scaleType="centerInside"
+                android:src="@drawable/backxhdpi" />
+
+            <ImageButton
+                android:id="@+id/pause_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:contentDescription="@string/pause"
+                android:scaleType="centerInside"
+                android:src="@drawable/pausexhdpi" />
+
+            <ImageButton
+                android:id="@+id/play_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:contentDescription="@string/play"
+                android:scaleType="centerInside"
+                android:src="@drawable/playxhdpi"
+                android:visibility="gone" />
+
+
+            <ImageButton
+                android:id="@+id/next_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:contentDescription="@string/next"
+                android:scaleType="centerInside"
+                android:src="@drawable/nextxhdpi" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/exit_btn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:contentDescription="@string/exit"
+        android:scaleType="centerInside"
+        android:src="@drawable/exitxhdpi" />
+
+
+</LinearLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/a"
+    android:orientation="vertical"
+    tools:context=".view.fragments.RecipeDetailsFragment">
+
+
+    <ImageView
+        android:id="@+id/fragment_show_recipe_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:background="@color/c"
+        android:gravity="center"
+        android:scaleType="centerInside"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <ImageView
+        android:id="@+id/frag_recipe_details_image_edite"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_twotone_edit_48"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fragment_show_recipe_image" />
+
+    <TextView
+        android:id="@+id/frag_recipe_details_title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoSizeMaxTextSize="30sp"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeStepGranularity="1sp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/recipety"
+        android:maxLines="1"
+        android:padding="15dp"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.5"
+        android:shadowRadius="1.8"
+        android:singleLine="true"
+        android:text="Recipe Title"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_show_recipe_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fragment_show_recipe_image"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/frag_recipe_details_bar_bottom_img"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/d"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_show_recipe_image"
+        tools:layout_editor_absoluteX="141dp" />
+
+
+    <ImageView
+        android:id="@+id/frag_recipe_details_image_like"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/f"
+        android:src="@drawable/ic_twotone_favorite_48"
+        app:layout_constraintBottom_toBottomOf="@+id/frag_recipe_details_bar_bottom_img"
+        app:layout_constraintEnd_toEndOf="@+id/frag_recipe_details_bar_bottom_img"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_show_recipe_image"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/frag_recipe_details_likes_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="0"
+        android:textColor="@color/f"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/frag_recipe_details_bar_bottom_img"
+        app:layout_constraintEnd_toStartOf="@+id/frag_recipe_details_image_like"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_show_recipe_image"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <ImageView
+        android:id="@+id/frag_recipe_details_image_user"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_twotone_supervised_user_circle_24"
+        app:layout_constraintBottom_toBottomOf="@+id/frag_recipe_details_bar_bottom_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_show_recipe_image" />
+
+    <TextView
+        android:id="@+id/frag_recipe_details_user_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="user_name"
+        android:textColor="@color/b"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/frag_recipe_details_bar_bottom_img"
+        app:layout_constraintEnd_toStartOf="@+id/frag_recipe_details_likes_text"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/frag_recipe_details_image_user"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_show_recipe_image"
+        app:layout_constraintVertical_bias="0.586" />
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/frag_recipe_details_view_Pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/frag_recipe_details_tabLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_recipe_details_bar_bottom_img" />
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/frag_recipe_details_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tabBackground="@color/c"
+        app:tabIndicatorColor="@color/b"
+        app:tabIndicatorHeight="10dp"
+        app:tabSelectedTextColor="@color/b"
+        app:tabTextColor="@color/a">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ingredients" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/preparation" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comments" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

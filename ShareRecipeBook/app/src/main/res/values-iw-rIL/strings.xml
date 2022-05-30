@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Share Recipe Book</string>
+    <string name="hello_blank_fragment">שלום פרגמנט ריק</string>
+    <string name="home">דף בית</string>
+    <string name="Favorites">מועדיפים</string>
+    <string name="my_recipes">המתכונים שלי</string>
+    <string name="email">אימייל</string>
+    <string name="password">סיסמה</string>
+    <string name="name">שם משתמש</string>
+    <string name="ingredients">מצרכים</string>
+    <string name="preparation">אופן הכנה</string>
+    <string name="search">חיפוש</string>
+    <string name="settings">הגדרות</string>
+    <string name="Login">התחבר</string>
+    <string name="Logout">צא</string>
+    <string name="my_favorites">המועדפים שלי</string>
+    <string name="My_recipes">המתכונים שלי</string>
+    <string name="login_instructions">שלום! כדי ליהנות מכל האפשרויות שיש לאפליקציה שלנו להציע, עליך להיות מחובר. תוכל להירשם אם עדיין אין לך חשבון</string>
+    <string name="register_instructions">אנא מלא את שמך, כתובת הדוא\"ל והסיסמה שלך</string>
+    <string name="msg_logout">התנתקת, עכשיו אתה אורח</string>
+    <string name="msg_logout_failed">אתה לא מחובר</string>
+    <string name="title_bar_login">התחברות</string>
+    <string name="register">הרשמה</string>
+    <string name="msg_needLogin">עליך להיות מחובר כדי להוסיף מתכונים</string>
+    <string name="comments">תגובות</string>
+    <string name="Send">שלח</string>
+    <string name="messages_header">מצב לילה</string>
+    <string name="Ui">ממשק</string>
+    <string name="reply_title">ברירת מחדל</string>
+    <string name="sync_title">קבל התראות</string>
+    <string name="language">שפה</string>
+    <string name="user_properties">הגדרות משתמש</string>
+    <string name="resat_pasoword">אפס סיסמה</string>
+    <string name="forgot_password">שכחת סיסמה?</string>
+    <string name="save_changes">שמור שינויים</string>
+    <string name="comment_notif_title">תגובה חדשה!</string>
+    <string name="comment_notif_has_commented">"הגיב על "</string>
+    <string name="like_notif_title">אוהבים אותך!</string>
+    <string name="like_notif_has_liked">אהב את</string>
+    <string name="error_fill_name">נא למלא את השם</string>
+    <string name="error_fill_email">נא למלא את כתובת האימייל</string>
+    <string name="error_fill_password">חובה להגדיר סיסמה לפחות באורך 6 תווים</string>
+    <string name="login_wait">מתחבר… נא להמתין</string>
+    <string name="add_instructions">הגיע הזמן להפגין את היכולות שלך, לשתף את תמונת המתכון שלך</string>
+    <string name="recipes_title">שם למתכון</string>
+    <string name="comments_login">אנא הרשם בכדי להשאיר תגובה.</string>
+    <string name="Settings_instructions">אנא הפעל מחדש את היישום כדי שהשינויים ייכנסו לתוקף</string>
+
+</resources>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Retro Player</string>
+    <string name="notification_title_text">Loading music, please wait …</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="exit">Exit</string>
+    <string name="songimage">SongImage</string>
+    <string name="enter_music_link">Enter music link</string>
+    <string name="music_pic_big">music_pic_big</string>
+    <string name="add_link">Add link</string>
+    <string name="add_a_song">Enter music name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

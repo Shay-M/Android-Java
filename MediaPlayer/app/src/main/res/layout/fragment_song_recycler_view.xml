@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SongsRecyclerView.SongRecyclerView_UpdateUI_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="206dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="0.5"
+            android:src="@drawable/logoxhdpi"
+            tools:ignore="ContentDescription" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_of_songs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:paddingTop="10dp"
+            tools:listitem="@layout/card_of_song"/>
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="206dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.3">
+
+            <ImageView
+                android:id="@+id/tape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tapexhdpi"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/spain1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="49dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginBottom="58dp"
+                android:src="@drawable/span1xhdpi"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/spain2"
+                android:layout_width="27dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="47dp"
+                android:layout_marginEnd="52dp"
+                android:layout_marginBottom="60dp"
+                android:layout_toStartOf="@+id/spain1"
+                android:src="@drawable/span2xhdpi"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

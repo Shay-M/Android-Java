@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    app:cardCornerRadius="9dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/gradient_background">
+
+        <ImageView
+            android:id="@+id/song_image"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:background="@color/_R_red"
+            android:contentDescription="@+id/song_image"
+            android:cropToPadding="true"
+            android:src="@null" />
+
+        <TextView
+            android:id="@+id/song_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/song_image"
+            android:maxLength="26"
+            android:padding="8dp"
+            android:text="@color/white"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/song_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/song_title"
+            android:layout_toEndOf="@id/song_image"
+            android:paddingStart="7dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="0dp"
+            android:text="@color/_light_blue"
+            android:textColor="@color/_light_blue"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
