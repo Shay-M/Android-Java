@@ -1,0 +1,83 @@
+@startuml
+class com.silverhorse.freegames.ui.ListGameFragment {
+- ListGameViewModel mlistGameViewModel
+- RecyclerView mRecyclerViewGames
+- GameAdapter mGameAdapter
++ void onCreateOptionsMenu(Menu,MenuInflater)
++ boolean onOptionsItemSelected(MenuItem)
++ void onCreate(Bundle)
++ View onCreateView(LayoutInflater,ViewGroup,Bundle)
++ void onViewCreated(View,Bundle)
++ void onGameClick(int,View)
+}
+class com.silverhorse.freegames.ui.MainActivity {
+# void onCreate(Bundle)
+}
+class com.silverhorse.freegames.viewModel.ListGameViewModel {
+- MutableLiveData<List<Game>> listOfGames
++ LiveData<List<Game>> getGamesList()
+- void loadGames()
++ void sortByName()
+}
+interface com.silverhorse.freegames.adapters.OnGameListener {
+~ void onGameClick(int,View)
+}
+class com.silverhorse.freegames.network.ApiUtil {
+~ {static} String BASE_URL
++ {static} Api getRetrofitApi()
+}
+class com.silverhorse.freegames.ui.GameInfoFragment {
+- Game gameGet
+- TextView mGameTitle
+- TextView GameInfo
+- ImageView mGameImageView
++ void onCreate(Bundle)
++ View onCreateView(LayoutInflater,ViewGroup,Bundle)
++ void onViewCreated(View,Bundle)
+}
+class com.silverhorse.freegames.model.Game {
+- String name
+- String imgUrl
+- String info
++ String getName()
++ void setName(String)
++ String getImgUrl()
++ void setImgUrl(String)
++ String getInfo()
++ void setInfo(String)
+}
+interface com.silverhorse.freegames.network.Api {
+~ Call<List<Game>> getGames()
+~ Call<List<Game>> getGames(String)
+}
+class com.silverhorse.freegames.adapters.GameViewHolder {
+~ TextView mGameTitle
+~ ImageView mGameImageView
+~ OnGameListener mOnGameListener
++ void onClick(View)
+}
+class com.silverhorse.freegames.adapters.GameAdapter {
+- List<Game> mGameList
+- List<Game> allGameList
+- OnGameListener mOnGameListener
+- Filter filter
++ void setGameList(List<Game>)
++ Game getSelectedGame(int)
++ GameViewHolder onCreateViewHolder(ViewGroup,int)
++ void onBindViewHolder(GameViewHolder,int)
++ int getItemCount()
++ Filter getFilter()
+}
+
+
+com.silverhorse.freegames.adapters.OnGameListener <|.. com.silverhorse.freegames.ui.ListGameFragment
+androidx.fragment.app.Fragment <|-- com.silverhorse.freegames.ui.ListGameFragment
+androidx.appcompat.app.AppCompatActivity <|-- com.silverhorse.freegames.ui.MainActivity
+androidx.lifecycle.ViewModel <|-- com.silverhorse.freegames.viewModel.ListGameViewModel
+androidx.fragment.app.Fragment <|-- com.silverhorse.freegames.ui.GameInfoFragment
+java.io.Serializable <|.. com.silverhorse.freegames.model.Game
+com.silverhorse.freegames.adapters.OnClickListener <|.. com.silverhorse.freegames.adapters.GameViewHolder
+com.silverhorse.freegames.adapters.ViewHolder <|-- com.silverhorse.freegames.adapters.GameViewHolder
+android.widget.Filterable <|.. com.silverhorse.freegames.adapters.GameAdapter
+com.silverhorse.freegames.adapters.Adapter <|-- com.silverhorse.freegames.adapters.GameAdapter
+@enduml
